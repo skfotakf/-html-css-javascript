@@ -1,0 +1,75 @@
+
+h4{
+    font-size: 12px;
+    color: gray;
+}
+img{
+    width: auto;
+    height: auto;
+    max-width: 500px;
+}
+
+button{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+}
+
+input{
+    width: 300px;
+    margin: 5px;
+}
+.box{
+    margin:100px;
+    padding: 50px 30px;
+    width: 350px;    
+}
+
+.checkbox{
+    width: 30px;
+    
+}
+.idpass{
+    border: 0px;
+    border-bottom: 1px solid #d3d3d3;
+    height: 40px;
+    font-size: 16px;
+    
+}
+#loginBox {
+    padding: 50px;
+    border: 1px solid #d3d3d3;
+}
+
+#yellowBtn {
+    background-color: #F5CB46;
+    
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    
+}
+
+.leftA{
+    margin-right: 100px;
+}
+.footer{
+   
+    display: flex;
+}
+h5{
+    
+    margin: 0px 20px;
+    font-weight: lighter;
+}
+h6{
+    
+    margin: 10px 160px;
+    color: gray;
+}
+

@@ -1,46 +1,59 @@
 
+main {
+    border-bottom: 1px solid #dddddd;
+}
+h2{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 300;
+}
 h4{
+    margin: 0;
     font-size: 12px;
     color: gray;
+    font-weight: 130;
 }
 img{
     width: auto;
     height: auto;
-    max-width: 500px;
+    max-width: 550px;
 }
 
-button{
-    width: 300px;
-    height: 50px;
-    border-radius: 5px;
-    border: 0;
-    margin: 10px;
+button {
+    width: 350px;
 }
 
-input{
-    width: 300px;
-    margin: 5px;
-}
+
 .box{
-    margin:100px;
-    padding: 50px 30px;
-    width: 350px;    
+
+    height: 500px;
+    margin: 120px 100px 60px;
+    padding: 50px 40px;
+    width: 330px;    
 }
 
+.twoBox{
+    display: flex;
+    padding: 0 300px;
+}
+form {
+    width: 300px;
+}
+
+.formContent{
+    padding: 10px 10px;
+}
+#loginBox{
+    width: 380px;
+    padding: 30px 50px;
+}
 .checkbox{
-    width: 30px;
-    
+    width: 15px;
+    height: 15px;
 }
-.idpass{
-    border: 0px;
-    border-bottom: 1px solid #d3d3d3;
-    height: 40px;
-    font-size: 16px;
-    
-}
-#loginBox {
-    padding: 50px;
-    border: 1px solid #d3d3d3;
+
+.idpass {
+    width: 350px;
 }
 
 #yellowBtn {
@@ -48,28 +61,38 @@ input{
     
 }
 
+.hr-sect {
+    padding: 0px 0px;
+    
+    height: 18px;
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	font-size: 12px;
+}
+.hr-sect::before,
+.hr-sect::after {
+	content: "";
+	flex-grow: 1;
+    
+	background: #e5e5e5;
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+#as{
+    width: 380px;
+}
 a{
     text-decoration: none;
-    color: gray;
-    font-size: 14px;
+    color:#555555;
+    font-size: 12px;
     
 }
 
 .leftA{
-    margin-right: 100px;
-}
-.footer{
-   
-    display: flex;
-}
-h5{
-    
-    margin: 0px 20px;
-    font-weight: lighter;
-}
-h6{
-    
-    margin: 10px 160px;
-    color: gray;
+    margin-right: 170px;
 }
 

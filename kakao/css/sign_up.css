@@ -1,0 +1,93 @@
+
+.container{
+    
+    
+}
+
+main {
+    display: block;
+    text-align: center;
+    margin-left: 375px;
+    margin-right: 375px;
+    margin-top: 100px;
+}
+
+#emailBox {
+    margin: 0 350px;
+    padding: 50px ;
+    text-align: left;
+    margin-top: 50px;
+    padding-top: 50px;
+    height: 450px;
+}
+
+.formContent{
+    padding: 10px 0px;
+}
+#bars{
+    display: flex;
+}
+.blackbar {
+    width: 25px;
+    height: 2px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: #333333;
+    border: 1px solid #333333;
+}
+
+.graybar {
+    width: 25px;
+    height: 2px;
+    border-radius: 0px 4px 4px 0px;
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+}
+input {
+    border:0;
+    width: 250px;
+    
+}
+
+
+#emailInputs {
+    padding-bottom: 0;
+    border-bottom: 1px solid #dddddd;
+}
+ul{
+    font-size: 10px;
+    color: gray;
+    padding-left: 25px;
+    
+}
+ul > li {
+    text-align: left;
+    
+}
+
+#as {
+    padding-top: 0;
+}
+a{
+    
+    color: black;
+    font-size: 14px;
+    
+}
+button {
+    width: 350px;
+}
+#certification {
+    border: 1px solid #dddddd;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/*------------pass-----------------*/
+#passInputs {
+    border-bottom: 0;
+}
+#passInput {
+    border-bottom: 1px solid #dddddd;
+}

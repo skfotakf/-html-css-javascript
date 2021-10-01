@@ -2,8 +2,8 @@
 
 
 body {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -13,14 +13,65 @@ body {
 main{
     
     display: flex;
-    border-bottom: 1px solid #d3d3d3;
+    
 }
 
 footer{
+    display: inline-block;
+    text-align: center;
     
-    margin: 30px 380px;
+    width: 1920px;
+
+    margin: 30px;
     font-size: 8px;
 }
+
+footer ul {
+    margin-left: 700px;
+    
+}
+footer ul li {
+    
+    list-style-type: none;
+    float:left;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+h6{
+    display: inline;
+    margin: 10px 160px;
+    color: gray;
+}
+input{
+    
+    margin: 5px;
+
+    border: 0px;
+    border-bottom: 1px solid #d3d3d3;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    
+    
+}
+
+.formBox {
+    
+    border: 1px solid #d3d3d3;
+}
+button{
+    
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+}
+
+
+
+
+
 
 
 

@@ -1,10 +1,22 @@
-
-main {
-    border-bottom: 1px solid #dddddd;
-    height: 750px;
+.container {
+    box-sizing: border-box;
+    
 }
 
+header {
+    border-bottom: 1px solid #dddddd;
+    padding: 80px;
+    margin-bottom: 20px;
+    
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 footer {
+    
     font-size: 12px;
     margin-top: 20px;
 }
@@ -20,43 +32,106 @@ h4{
     color: gray;
     font-weight: 130;
 }
+h1{
+    margin: 0px;
+    margin-bottom: 30px;
+}
 img{
     width: auto;
     height: auto;
     max-width: 550px;
 }
 
-button {
-    width: 350px;
-}
-.twoBox{
-    display: inline-flex;
-    padding: 100px 420px;
-    width: 1920px;
-    
-}
-.textBox{
-    height: 500px;
-    padding-top: 50px;
-    width: 330px; 
-    margin-right: 250px; 
-    
-    
-}
-form {
-    width: 300px;
+form{
+    display: block;
 }
 
-.formContent{
-    padding: 7px 10px;
+.item_idpw{
+    position: relative;
+    margin: 0px;
+    
+    width: 338px;
+    height: 48px;
 }
+
+.item_ipt{
+    margin: 0px;
+    width: 338px;
+    outline: none;
+    cursor: pointer;
+}
+::placeholder {
+    font-size: 14px;
+    color: #8e8e8e;
+    font-weight: 600;
+}
+.info_tip {
+    display: none;
+    margin: 0px;
+    padding: 10px 0 16px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgba(0,0,0,0.6);
+    text-align: left;
+}
+.item_chk{
+    margin-top: 20px;
+}
+.item_chk {
+    display: flex;
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #252525;
+    align-items: center;
+}
+
+.item_cb{
+    display: none!important;
+    
+}
+.item_cb + .chk_on {
+    display: inline-block;
+    font-size: 20px;
+    cursor:pointer; 
+    margin-right: 5px;
+    color: #e5e5e5;
+    cursor: pointer;
+}
+.chk_on ~ .chk_off {
+    display: none;
+    font-size: 20px;
+    cursor:pointer; 
+    margin-right: 5px;
+    color: #fee500;
+    cursor: pointer;
+}
+.item_cb:checked + .chk_on {
+    display: none;
+}
+.item_cb:checked + .chk_on ~ .chk_off {
+    display: inline-block;
+}
+.chk_lab{
+    cursor: pointer;
+}
+.warp_btn{
+    margin-top: 40px;
+}
+button {
+    margin: 0px;
+    width: 350px;
+    cursor: pointer;
+}
+
+
+
 .formBox{
     height: 500px;
-   
-      
-    padding-top: 30px;
-    padding-left: 60px;
-    width: 430px;
+    padding: 30px 60px;
+
+    
     
 }
 .checkbox{
@@ -64,9 +139,7 @@ form {
     height: 15px;
 }
 
-.idpass {
-    width: 350px;
-}
+
 
 #yellowBtn {
     background-color: #FEE500;
@@ -74,7 +147,7 @@ form {
 }
 
 .hr-sect {
-    padding: 0px 0px;
+    padding: 15px 0px;
     
     height: 18px;
 	display: flex;
@@ -94,9 +167,7 @@ form {
 	line-height: 0px;
 }
 
-#as{
-    width: 380px;
-}
+
 a{
     text-decoration: none;
     color:#555555;

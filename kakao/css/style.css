@@ -9,19 +9,12 @@ body {
 }
 
 
-
-main{
-    
-    display: flex;
-    
-}
-
 footer{
     display: inline-block;
     text-align: center;
     
     width: 1920px;
-
+    
     
     font-size: 8px;
     font-weight: 200;
@@ -35,7 +28,7 @@ footer{
     
     list-style-type: none;
     
-    margin-left: 20px;
+    padding-left: 20px;
     justify-content: center;
     height: 12px;
 }
@@ -58,9 +51,10 @@ input{
     
 }
 
-.formBox {
+.warp_form {
     
     border: 1px solid #d3d3d3;
+    padding: 60px 60px;
 }
 button{
     

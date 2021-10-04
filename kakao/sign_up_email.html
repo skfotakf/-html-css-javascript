@@ -13,10 +13,11 @@
 
 <body>
     <div class="container">
-        <main>
+        <header>
+            <main>
             <h1>kakao</h1>
 
-            <div class="box formBox" id="emailBox">
+            <div class="box warp_form" id="emailBox">
 
                 <form>
                     <div class="formContent">
@@ -49,7 +50,7 @@
                     </div>
                 </form>
             </div>
-        </main>
+            </main>
         <footer>
             <div>
                 <div class="footerList">
@@ -77,6 +78,8 @@
             x.style.fontSize = "14px";
             var y = document.getElementById("emailBox");
             y.style.height = "470px";
+            var z = document.getElementById("emailInputs");
+            z.style.borderBottom = "1px solid red";
         }
     </script>
 </body>

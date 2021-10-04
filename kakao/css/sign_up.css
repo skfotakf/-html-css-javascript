@@ -5,46 +5,38 @@
 }
 
 main {
+    
     display: block;
     text-align: center;
-    margin-left: 375px;
-    margin-right: 375px;
+    margin-left: 330px;
+    margin-right: 330px;
     margin-top: 100px;
 }
-
+footer {
+    font-size: 12px;
+    margin-top: 8px;
+}
 #emailBox {
     margin: 0 350px;
     padding: 50px ;
     text-align: left;
     margin-top: 50px;
     padding-top: 50px;
-    height: 450px;
+    height: 430px;
 }
 
 .formContent{
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 #bars{
     display: flex;
 }
-.blackbar {
-    width: 25px;
-    height: 2px;
-    border-radius: 4px 0px 0px 4px;
-    background-color: #333333;
-    border: 1px solid #333333;
-}
 
-.graybar {
-    width: 25px;
-    height: 2px;
-    border-radius: 0px 4px 4px 0px;
-    background-color: #dddddd;
-    border: 1px solid #dddddd;
-}
 input {
+    margin: 0;
+    padding: 0;
     border:0;
-    width: 250px;
+    width: 330px;
     
 }
 
@@ -56,7 +48,7 @@ input {
 ul{
     font-size: 10px;
     color: gray;
-    padding-left: 25px;
+    padding-left: 17px;
     
 }
 ul > li {
@@ -67,6 +59,10 @@ ul > li {
 #as {
     padding-top: 0;
 }
+.footerContents{
+    font-size: 8px;
+    color: rgba(0,0,0,0.9);
+}
 a{
     
     color: black;
@@ -74,9 +70,13 @@ a{
     
 }
 button {
-    width: 350px;
+    width: 450px;
+    margin-top: 25px;
+    padding: 5px 0px;
 }
 #certification {
+    margin-left: 35px;
+    margin-right: 0;
     border: 1px solid #dddddd;
     width: 80px;
     height: 30px;
@@ -84,6 +84,25 @@ button {
     background-color: white;
 }
 
+progress {
+    -webkit-appearance: none;
+    
+    height: 7px;
+    
+  }
+  
+  ::-webkit-progress-bar {
+      border: 1px solid white;
+      border-radius: 5px;
+    background-color: #dddddd;
+  }
+  
+  ::-webkit-progress-value {
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #333333;
+  }
+  
 /*------------pass-----------------*/
 #passInputs {
     border-bottom: 0;

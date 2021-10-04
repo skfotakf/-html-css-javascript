@@ -26,11 +26,13 @@
                             <h1>kakao</h1>
                         </div>
                         <div class="formContent">
-                            <input type="email" class="idpass" placeholder="카카오메일 아이디, 이메일, 전화번호">
+                            <input type="email" class="idpass" placeholder="카카오메일 아이디, 이메일, 전화번호" onclick="idOnclick()"  onblur="idOnblur()">
+                            <p id="tip"></p>
                             <input type="password" class="idpass" placeholder="비밀번호"><br>
                         </div>
-                        <div class="formContent">
-                            <i class="far fa-check-circle" style="color:#dddddd"></i>로그인상태 유지<br>
+                        <div class="formContent" style="font-size: 15px;">
+                            <i class="fas fa-check-circle" style="color:#F0C42F" id="check" onclick="buttonOnclick()"></i>
+                                &nbsp;&nbsp;로그인상태 유지<br>
                         </div>
                         <div class="formContent">
                             <button type="submit" id="yellowBtn">로그인</button><br>
@@ -50,23 +52,58 @@
 
         </main>
         <footer>
-            <ul class="footerList">
-                <li>이용약관</li>
-                <li><strong>개인정보 처리방침</strong></li>
-                <li>운영정책</li>
-                <li>고객센터</li>
-                <li>공지사항</li>
-                <li>한국어</li>
-                <br>
-
-
-            </ul>
+            <div>
+                <div class="footerList">
+                    <a class="footerContents" href="https://www.kakao.com/policy/terms?lang=ko">이용약관</a>
+                    <a class="footerContents" href="https://www.kakao.com/policy/privacy?lang=ko"><strong>개인정보 처리방침</strong></a>
+                    <a class="footerContents" href="https://www.kakao.com/policy/oppolicy?lang=ko">운영정책</a>
+                    <a class="footerContents" href="https://cs.kakao.com/">고객센터</a>
+                    <a class="footerContents" href="https://www.kakao.com/notices?lang=ko">공지사항</a>
+                    <a class="footerContents">한국어 &nbsp;<span><img src="./images/expand_less 1.png" alt="^" style="width: 9px; vertical-align:20%;"></span></a>
+                    <br>
+    
+    
+                </div>
+            </div>
+            
             <h6>Copyright © Kakao Corp. All rights reserved.</h6>
 
 
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/a04df2c0ca.js" crossorigin="anonymous"></script>
+    <script>
+        function idOnclick() {
+            var x = document.getElementById("tip");
+            var y = document.getElementById("loginBox");
+            x.innerHTML="Tip 카카오메일이 있다면 이메일만 입력해보세요.";
+            x.style.fontSize="12px";
+            x.style.fontColor="rgba(0,0,0,0.7)";
+            y.style.height="550px";
+        }
+        
+        function idOnblur() {
+            var x = document.getElementById("tip");
+            var y = document.getElementById("loginBox");
+            x.innerHTML="";
+            y.style.height="500px";
+            
+        }
+        var check = document.querySelector("#check");
+        function buttonOnclick() {
+            let class_text = check.getAttribute('class');
+            if(class_text == "fas fa-check-circle") {
+                check.setAttribute('class', "far fa-check-circle");
+                check.class = "far fa-check-circle"
+                check.style.color = "#dddddd";
+            }
+            if(class_text == "far fa-check-circle") {
+                check.setAttribute('class', "fas fa-check-circle");
+                check.class = "fas fa-check-circle"
+                check.style.color = "#F0C42F";
+            }
+        }
+    </script>
 </body>
 
 </html>

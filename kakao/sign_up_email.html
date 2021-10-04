@@ -15,23 +15,25 @@
     <div class="container">
         <main>
             <h1>kakao</h1>
-            
+
             <div class="box formBox" id="emailBox">
-                
+
                 <form>
-                    <div class="formContent" id="bars">
-                        <div class="blackbar"></div>
-                        <div class="graybar"></div>
-                    
+                    <div class="formContent">
+                    <progress class="bar_navigation" value ="50" max="100" style="width: 60px;">
+
+
                     </div>
                     <div class="formContent">
-                    <h2>카카오계정으로 사용할<br>
-                        이메일 주소를 입력해 주세요.</h2>
+                        <h2>카카오계정으로 사용할<br>
+                            이메일 주소를 입력해 주세요.</h2>
                     </div>
                     <div class="formContent" id="emailInputs">
-                        <input type="email" placeholder="이메일 주소 입력" required>
+                        <input type="email" placeholder="이메일 주소 입력" required autofocus onblur="inputOnblur()" >
+                        
                         <button type="submit" id="certification">인증 요청</button>
                     </div>
+                    <p id="caution"></p>
                     <div class="formContent">
                         <ul>
                             <li>입력한 이메일 주소로 인증번호가 발송됩니다.</li>
@@ -40,7 +42,7 @@
                         </ul>
                     </div>
                     <div class="formContent" id="as">
-                    <a href="#">Daum 아이디로 가입</a>
+                        <a href="#">Daum 아이디로 가입</a>
                     </div>
                     <div class="formContent">
                         <button type="submit">다음</button>
@@ -49,23 +51,34 @@
             </div>
         </main>
         <footer>
-
-            <ul class="footerList">
-                <li>이용약관</li>
-                <li><strong>개인정보 처리방침</strong></li>
-                <li>운영정책</li>
-                <li>고객센터</li>
-                <li>공지사항</li>
-                <li>한국어</li>
-                <br>
-                
-                
-            </ul>
+            <div>
+                <div class="footerList">
+                    <a class="footerContents">이용약관</a>
+                    <a class="footerContents"><strong>개인정보 처리방침</strong></a>
+                    <a class="footerContents">운영정책</a>
+                    <a class="footerContents">고객센터</a>
+                    <a class="footerContents">공지사항</a>
+                    <a class="footerContents">한국어 &nbsp;<span><img src="./images/expand_less 1.png" alt="^" style="width: 10px; vertical-align: 20%;"></span></a>
+                    <br>
+    
+    
+                </div>
+            </div>
             <h6>Copyright © Kakao Corp. All rights reserved.</h6>
-            
+
         </footer>
     </div>
-    
+
+    <script>
+        function inputOnblur(){
+            var x = document.getElementById("caution");
+            x.innerHTML="카카오계정 이메일을 입력해주세요";
+            x.style.color = "red";
+            x.style.fontSize = "14px";
+            var y = document.getElementById("emailBox");
+            y.style.height = "470px";
+        }
+    </script>
 </body>
 
 </html>

@@ -22,20 +22,22 @@ footer{
     
     width: 1920px;
 
-    margin: 30px;
+    
     font-size: 8px;
+    font-weight: 200;
+    color: rgba(0,0,0,0.9);
 }
 
-footer ul {
-    margin-left: 700px;
-    
-}
-footer ul li {
+
+
+
+.footerContents{
     
     list-style-type: none;
-    float:left;
+    
     margin-left: 20px;
     justify-content: center;
+    height: 12px;
 }
 
 h6{

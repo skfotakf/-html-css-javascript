@@ -1,7 +1,14 @@
 
 main {
     border-bottom: 1px solid #dddddd;
+    height: 750px;
 }
+
+footer {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
 h2{
     margin: 0;
     font-size: 25px;
@@ -22,30 +29,35 @@ img{
 button {
     width: 350px;
 }
-
-
-.box{
-
-    height: 500px;
-    margin: 120px 100px 60px;
-    padding: 50px 40px;
-    width: 330px;    
-}
-
 .twoBox{
-    display: flex;
-    padding: 0 300px;
+    display: inline-flex;
+    padding: 100px 420px;
+    width: 1920px;
+    
+}
+.textBox{
+    height: 500px;
+    padding-top: 50px;
+    width: 330px; 
+    margin-right: 250px; 
+    
+    
 }
 form {
     width: 300px;
 }
 
 .formContent{
-    padding: 10px 10px;
+    padding: 7px 10px;
 }
-#loginBox{
-    width: 380px;
-    padding: 30px 50px;
+.formBox{
+    height: 500px;
+   
+      
+    padding-top: 30px;
+    padding-left: 60px;
+    width: 430px;
+    
 }
 .checkbox{
     width: 15px;
@@ -57,7 +69,7 @@ form {
 }
 
 #yellowBtn {
-    background-color: #F5CB46;
+    background-color: #FEE500;
     
 }
 
@@ -96,3 +108,6 @@ a{
     margin-right: 170px;
 }
 
+span{
+    height: 30px;
+}
